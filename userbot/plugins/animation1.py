@@ -143,30 +143,19 @@ async def _(event):
         await event.edit(animation_chars[i % 12])
 
 
-@catub.cat_cmd(
-    pattern="wtf$",
-    command=("wtf", plugin_category),
-    info={
-        "header": "Fun animation try yourself to know more",
-        "usage": "{tr}wtf",
-    },
-)
-async def _(event):
-    "animation command"
-    animation_interval = 0.8
-    animation_ttl = range(5)
-    event = await edit_or_reply(event, "wtf")
-    animation_chars = [
-        "What",
-        "What The",
-        "What The F",
-        "What The F Brah",
-        "What The F Brah\nhttps://telegra.ph/file/f3b760e4a99340d331f9b.jpg",
-    ]
-    for i in animation_ttl:
-        await asyncio.sleep(animation_interval)
-        await event.edit(animation_chars[i % 5], link_preview=True)
-
+@catub.cat_cmd(pattern="wtf")
+async def wtf(cat):
+	await cat.edit("W")
+	await asyncio.sleep(0.5)
+	await cat.edit("What ")
+	await asyncio.sleep(0.5)
+	await cat.edit(" What The")
+	await asyncio.sleep(0.5)
+	await cat.edit(" What The F")
+	await asyncio.sleep(0.6)
+	await cat.edit("[What The F Brah](https://telegra.ph//file/f3b760e4a99340d331f9b.jpg)")
+	
+# By @Ashit10 😁
 
 @catub.cat_cmd(
     pattern="ding$",
