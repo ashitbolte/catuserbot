@@ -7,6 +7,30 @@ from . import catmemes
 
 plugin_category = "fun"
 
+PRO = [
+    "`This guy iz pru as phok`" ,   
+    "`proness level = 69696969`" ,     
+    "`Itna pro banda dekhlia bc , abto marna hoga `" , 
+    "`you pro , pro `" ,   
+    "`wow, soo pruu`" ,    
+    "`Pro arrived, noob like me leave`" ,
+    "`Damn! , Pro !!`",
+    "`pero afff....`",
+
+]
+NOOB = [
+    "`This guy iz noob as phok`" ,    
+    "`Noobness level = 69696969`" ,   
+    "`Itna noob banda dekhlia bc , abto marna hoga `" ,   
+    "`you noob, noob. `" ,   
+    "`wow, soo noob \n die die`" ,   
+    "`Noob arrived, pro like me leave`" ,
+    "`Damm! ,Noob aff`",
+    "`Noob afffffff.....`",
+    
+]
+
+
 
 @catub.cat_cmd(
     pattern="congo$",
@@ -60,7 +84,7 @@ async def runner_lol(e):
 )
 async def metoo(e):
     "Whadya want to know? Are you a NOOB?"
-    txt = random.choice(catmemes.NOOBSTR)
+    txt = random.choice(NOOB)
     await edit_or_reply(e, txt)
 
 
@@ -102,7 +126,7 @@ async def hoi(e):
 )
 async def proo(e):
     "If you think you're pro, try this."
-    txt = random.choice(catmemes.PRO_STRINGS)
+    txt = random.choice(PRO)
     await edit_or_reply(e, txt)
 
 
