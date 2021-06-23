@@ -23,6 +23,5 @@ async def _(event):
         return await edit_delete(event, "`Give an input`")
     if not pling.startswith("https://"):
         return await edit_delete(event, "`the given pling link is not correct`")
-    await edit_or_reply(event, f"Read [bootloopfix from here](https://telegra.ph/How-to-delete-a-Magisk-module-from-Recovery-06-06) Before Flashing Anything.\n\n》 Then Download and Flash **{device}** Dsb from This Link : [Click here]({pling})\n\n》 Report here if it's either working as expected or not on your Device 👍")
-    
+    await edit_or_reply(event, f"Read **[#bootloopfix]**(https://telegra.ph/How-to-delete-a-Magisk-module-from-Recovery-06-06)  before flashing anything.\n\n》Then Download and Flash **{device}** from This Link : **[Click Here]**({pling})\n\n》Report here if it's either working as expected or not on your Device 👍")
 # Thanks to jisan 🤩
