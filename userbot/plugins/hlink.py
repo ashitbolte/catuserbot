@@ -6,10 +6,10 @@ plugin_category = "Extra"
 
 @catub.cat_cmd(
     pattern="hlink(?: |$)(.*)",
-    command=("tdsb", plugin_category),
+    command=("hlink", plugin_category),
     info={
         "header": "Asks User To Try DSB from given Pling Link.",
-        "usage": "{tr}tdsb <url> <DSB-File-name>",   
+        "usage": "{tr}hlink <url> <text >   
     },
 )
 async def _(event):
