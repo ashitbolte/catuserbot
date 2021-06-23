@@ -9,7 +9,7 @@ plugin_category = "utils"
 
 
 @catub.cat_cmd(
-    pattern="ctg$",
+    pattern="preview$",
     command=("ctg", plugin_category),
     info={
         "header": "Reply to link To get link preview using telegrah.s.",
