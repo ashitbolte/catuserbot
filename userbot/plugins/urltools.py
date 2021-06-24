@@ -121,30 +121,3 @@ async def _(event):
         )
 
 
-# By Priyam Kalra
-@catub.cat_cmd(
-    pattern="hl(?: |$)(.*)",
-    command=("hl", plugin_category),
-    info={
-        "header": "To hide the url with white spaces using hyperlink.",
-        "usage": "{tr}hl <url/reply to url>",
-        "examples": "{tr}hl https://da.gd/rm6qri",
-    },
-)
-async def _(event):
-    "To hide the url with white spaces using hyperlink."
-    input_str = "".join(event.text.split(maxsplit=1)[1:])
-    reply = await event.get_reply_message()
-    if not input_str and reply:
-        input_str = reply.text
-    if not input_str:
-        return await edit_delete(
-            event, "`Either reply to link or give link as input to get data`", 5
-        )
-    check = url(input_str)
-    if not check:
-        catstr = "http://" + input_str
-        check = url(catstr)
-    if not check:
-        return await edit_delete(event, "`the given link is not supported`", 5)
-    await edit_or_reply(event, "[ㅤㅤㅤㅤㅤㅤㅤ](" + input_str + ")")
