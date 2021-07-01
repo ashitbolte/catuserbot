@@ -61,7 +61,7 @@ async def _(event):
     },
 )
 async def _(event):
-    await event.edit("Send me your **SystemUI.apk** in PM.\n\nFor **(A10)**, You'll find it here : ```root/system/product/priv-app/SystemUI/SystemUI.apk```\n\n(__Choose one of__ [these styles](https://t.me/dualstatusbar/74824) __if you want to__)")
+    await event.edit("Send me your **SystemUI.apk** in PM.\n\nFor **(A10)**, You'll find it here : ```root/system/product/priv-app/SystemUI/SystemUI.apk```\n\n(__Choose one of__ [these styles](https://t.me/dualstatusbar/105541) __if you want to__)")
 
 
 
@@ -74,7 +74,7 @@ async def _(event):
     },
 )
 async def _(event):
-    await event.edit("Send me your **SystemUI.apk** in PM.\n\nFor **(A11)**, You'll find it here : ```root/system/system-ext/priv-app/SystemUI/SystemUI.apk```\n\n(__Choose one of__ [these styles](https://t.me/dualstatusbar/74824) __if you want to__)")
+    await event.edit("Send me your **SystemUI.apk** in PM.\n\nFor **(A11)**, You'll find it here : ```root/system/system-ext/priv-app/SystemUI/SystemUI.apk```\n\n(__Choose one of__ [these styles](https://t.me/dualstatusbar/105541) __if you want to__)")
 
 
 
